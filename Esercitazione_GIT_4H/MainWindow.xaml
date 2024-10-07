@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="29,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" Width="101"><Run Language="it-it" Text="Inserimento brano"/></TextBlock>
+        <TextBox x:Name="txtInstitolo" HorizontalAlignment="Left" Margin="68,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="it-it" Text="Titolo:"/></TextBlock>
+        <TextBox x:Name="txtInsAutore" HorizontalAlignment="Left" Margin="68,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="it-it" Text="Autore"/></TextBlock>
+        <TextBox x:Name="txtInsDurata" HorizontalAlignment="Left" Margin="68,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,111,0,0" TextWrapping="Wrap" Text="Durata" VerticalAlignment="Top"/>
+        <Button x:Name="btnCreaBrano" Content="Crea Brano" HorizontalAlignment="Left" Margin="59,152,0,0" VerticalAlignment="Top" Height="33" Width="105" Click="btnCreaBrano_Click"/>
 
     </Grid>
 </Window>

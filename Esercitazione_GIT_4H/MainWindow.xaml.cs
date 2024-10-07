@@ -20,5 +20,10 @@ namespace Esercitazione_GIT_4H
         {
             InitializeComponent();
         }
+
+        private void btnCreaBrano_Click(object sender, RoutedEventArgs e)
+        {
+            Brano b = new Brano(txtInstitolo.Text, txtInsAutore.Text, txtInsDurata.Text);
+        }
     }
 }
