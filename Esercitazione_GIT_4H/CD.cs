@@ -18,6 +18,11 @@ namespace Esercitazione_GIT_4H
             this.brani = brani;
         }
 
+        public string getTitolo() { return titolo; }
+        public string getAutore() { return autore; }
+        public void setTitolo(string value) { titolo = value; }
+        public void setAutore(string value) { autore = value; }
+
 
         public string toString(List<Brano> brani)
         {
@@ -27,6 +32,16 @@ namespace Esercitazione_GIT_4H
                 listaDiBrani += " " + brani[i].getTitolo();
             }
             return listaDiBrani;
+        }
+
+        public int Durata(List<Brano> brani)
+        {
+            int durata = 0;
+            for (int i = 0; i < brani.Count; i++)
+            {
+                durata += brani[i].getDurata();
+            }
+            return durata;
         }
     }
 }
