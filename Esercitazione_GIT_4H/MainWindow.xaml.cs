@@ -11,6 +11,8 @@ using System.Windows.Shapes;
 
 namespace Esercitazione_GIT_4H
 {
+    Brano b;
+    
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -23,7 +25,17 @@ namespace Esercitazione_GIT_4H
 
         private void btnCreaBrano_Click(object sender, RoutedEventArgs e)
         {
-            Brano b = new Brano(txtInstitolo.Text, txtInsAutore.Text, txtInsDurata.Text);
+            b = new Brano(txtInstitolo.Text, txtInsAutore.Text, txtInsDurata.Text);
+        }
+
+        private void btnDatiCD_Click(object sender, RoutedEventArgs e)
+        {
+            lbl_Dati_Cd.Content = b.toString();
+        }
+
+        private void btnDurata_Click(object sender, RoutedEventArgs e)
+        {
+            lblDurata.Content=b.shortSong(int.Parse(txtInsDurata.Text));
         }
     }
 }

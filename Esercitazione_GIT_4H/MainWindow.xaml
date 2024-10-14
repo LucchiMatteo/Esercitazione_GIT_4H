@@ -15,6 +15,11 @@
         <TextBox x:Name="txtInsDurata" HorizontalAlignment="Left" Margin="68,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="19,111,0,0" TextWrapping="Wrap" Text="Durata" VerticalAlignment="Top"/>
         <Button x:Name="btnCreaBrano" Content="Crea Brano" HorizontalAlignment="Left" Margin="59,152,0,0" VerticalAlignment="Top" Height="33" Width="105" Click="btnCreaBrano_Click"/>
+        <Label x:Name="lbl_Dati_CD" Content="" HorizontalAlignment="Left" Margin="221,243,0,0" VerticalAlignment="Top" Height="30" Width="157"/>
+        <Button x:Name="btnDatiCD" Content="VisualizzaDatiCD" HorizontalAlignment="Left" Margin="36,232,0,0" VerticalAlignment="Top" Height="52" Width="128" Click="btnDatiCD_Click"/>
+        <Button x:Name="btnDurata" Content="Durata" HorizontalAlignment="Left" Height="52" Margin="37,325,0,0" VerticalAlignment="Top" Width="127" Click="btnDurata_Click"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="201,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblDurata" Content="" HorizontalAlignment="Left" Margin="68,394,0,0" VerticalAlignment="Top" Height="30" Width="154"/>
 
     </Grid>
 </Window>
