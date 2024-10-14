@@ -12,6 +12,8 @@ using System.Windows.Shapes;
 namespace Esercitazione_GIT_4H
 {
     Brano b;
+    CD c;
+    List brani = new List<Brano>();
     
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -26,6 +28,7 @@ namespace Esercitazione_GIT_4H
         private void btnCreaBrano_Click(object sender, RoutedEventArgs e)
         {
             b = new Brano(txtInstitolo.Text, txtInsAutore.Text, txtInsDurata.Text);
+            brani.add(b);
         }
 
         private void btnDatiCD_Click(object sender, RoutedEventArgs e)
@@ -36,6 +39,21 @@ namespace Esercitazione_GIT_4H
         private void btnDurata_Click(object sender, RoutedEventArgs e)
         {
             lblDurata.Content=b.shortSong(int.Parse(txtInsDurata.Text));
+        }
+
+        private void btnCreaCD_Click(object sender, RoutedEventArgs e)
+        {
+            c = new CD(txtTitoloCD.Text, txtAutoreCD.Text, brani);
+        }
+
+        private void btnCD_ToString_Click(object sender, RoutedEventArgs e)
+        {
+            lblCanzoniCD.Content=c.toString();
+        }
+
+        private void btnDurata1_Click(object sender, RoutedEventArgs e)
+        {
+            lblDurata1.Content = c.Durata();
         }
     }
 }

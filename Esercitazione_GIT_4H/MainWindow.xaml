@@ -20,6 +20,16 @@
         <Button x:Name="btnDurata" Content="Durata" HorizontalAlignment="Left" Height="52" Margin="37,325,0,0" VerticalAlignment="Top" Width="127" Click="btnDurata_Click"/>
         <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="201,351,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblDurata" Content="" HorizontalAlignment="Left" Margin="68,394,0,0" VerticalAlignment="Top" Height="30" Width="154"/>
+        <TextBox x:Name="txtTitoloCD" HorizontalAlignment="Left" Margin="550,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" Height="29"/>
+        <TextBlock HorizontalAlignment="Left" Margin="498,20,0,0" TextWrapping="Wrap" Text="InserimentoCD" VerticalAlignment="Top" Height="19" Width="128"/>
+        <TextBlock HorizontalAlignment="Left" Margin="498,61,0,0" TextWrapping="Wrap" Text="Titolo:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="498,119,0,0" TextWrapping="Wrap" Text="Autore:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAutoreCD" HorizontalAlignment="Left" Height="28" Margin="550,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="btnCreaCD" Content="Crea CD" HorizontalAlignment="Left" Margin="562,185,0,0" VerticalAlignment="Top" Height="52" Width="101" Click="btnCreaCD_Click"/>
+        <Button x:Name="btnCD_ToString" Content="CanzoniCD" HorizontalAlignment="Left" Margin="465,284,0,0" VerticalAlignment="Top" Height="44" Width="97" Click="btnCD_ToString_Click"/>
+        <Label x:Name="lblCanzoniCD" Content="" HorizontalAlignment="Left" Height="22" Margin="612,295,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button x:Name="btnDurata1" Content="Durata" HorizontalAlignment="Left" Height="49" Margin="465,360,0,0" VerticalAlignment="Top" Width="97" Click="btnDurata1_Click"/>
+        <Label x:Name="lblDurata1" Content="" HorizontalAlignment="Left" Height="40" Margin="612,369,0,0" VerticalAlignment="Top" Width="126"/>
 
     </Grid>
 </Window>
